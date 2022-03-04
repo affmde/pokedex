@@ -1,0 +1,33 @@
+
+#wild-container{
+    background-image: url('C:/Users/affmd/OneDrive/Área de Trabalho/VS Code projects/pokedex/client/src/media/images/jay-dkFJST9zZZo-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+}
+
+#strength{
+    font-size: 1rem;
+    color: rgba(247, 151, 8, 0.925);
+    text-shadow: 1px 1px black;
+}
+
+#pokeball{
+    height: 40px;
+}
+#pokeball:hover{
+    transform: scale(1.5);
+    transition: all linear 200ms;
+}
+
+#level{
+    font-size: 3rem;
+    font-weight: Bold;
+}
+
+
+.card-body{
+    color: black;
+    font-size: 0.8rem;
+}

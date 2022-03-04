@@ -1,0 +1,39 @@
+#homepage-offline{
+    background-image: url('C:/Users/affmd/OneDrive/Área de Trabalho/VS Code projects/pokedex/client/src/media/images/branden-skeli-trz1LbugtHI-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 95vh;
+    opacity: 0.85;
+}
+
+#home-title{
+    color: white;
+    text-shadow: 4px 6px #000000;
+    font-size: 5rem;
+    filter: brightness(2.75)
+}
+
+#home-subtitle{
+    color: white;
+    text-shadow: 2px 2px #000000;
+    font-size: 2rem;
+    filter: brightness(2.75)
+}
+
+#homepage-online{
+    background-image: url('C:/Users/affmd/OneDrive/Área de Trabalho/VS Code projects/pokedex/client/src/media/images/bahnijit-barman-1fZC2rYbpsU-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 95vh;
+    opacity: 0.60;
+}
+
+.onlineInfo{
+    filter: brightness(5);
+    font-weight: bold;
+    color: red;
+    
+}
+
