@@ -27,7 +27,7 @@ export const CardComponent = ({info, user, fav, setFav, desc}) => {
       }
 
     const pokem = {info: info.species, pokemon: info.id}
-       await Axios.post('http://localhost:3001/pokemon', pokem , config)
+       await Axios.post('/pokemon', pokem , config)
        setFav(fav.concat(pokem))
     }
 
@@ -38,7 +38,7 @@ export const CardComponent = ({info, user, fav, setFav, desc}) => {
             headers: { Authorization: `bearer ${token}` },
           }
            
-           await Axios.post('http://localhost:3001/pokemon/deleteFav', {info: info.species, pokemon: info.id}, config)
+           await Axios.post('/pokemon/deleteFav', {info: info.species, pokemon: info.id}, config)
            setFav(fav.filter(f=>f.pokemon !== info.id))
         }
 
