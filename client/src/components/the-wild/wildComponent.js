@@ -76,7 +76,7 @@ export const WildComponent = ({experience, setExperience, stamina, setStamina, p
           }
     
         const pokem = {user}
-           await Axios.post('http://localhost:3001/pokemon/pokeballs', pokem , config)
+           await Axios.post('/pokemon/pokeballs', pokem , config)
            setPokeballs(pokeballs-1)
         }
 
@@ -92,7 +92,7 @@ export const WildComponent = ({experience, setExperience, stamina, setStamina, p
         const num = Math.floor(Math.random()*10)
         setPokeballs(pokeballs+num)
         const req = {pokeballs: num}
-           await Axios.post('http://localhost:3001/pokemon/pokestop', req , config)
+           await Axios.post('/pokemon/pokestop', req , config)
     }
 
     const spendStamina = async () => {
@@ -104,7 +104,7 @@ export const WildComponent = ({experience, setExperience, stamina, setStamina, p
         
         setStamina(stamina-5)
         const req = {type: 'spend'}
-        await Axios.post('http://localhost:3001/pokemon/stamina', req , config)
+        await Axios.post('/pokemon/stamina', req , config)
     }
 
     const getExperience = async (exper) => {
@@ -116,7 +116,7 @@ export const WildComponent = ({experience, setExperience, stamina, setStamina, p
         
         setExperience(experience + exper)
         const req = {exp: exper}
-        await Axios.post('http://localhost:3001/pokemon/experience', req , config)
+        await Axios.post('/pokemon/experience', req , config)
         
     }
 
@@ -133,7 +133,7 @@ export const WildComponent = ({experience, setExperience, stamina, setStamina, p
             setShowStamina(true)
         },600000)
         const req = {type: 'get'}
-        await Axios.post('http://localhost:3001/pokemon/stamina', req , config)
+        await Axios.post('/pokemon/stamina', req , config)
     }
     
 
@@ -144,7 +144,7 @@ export const WildComponent = ({experience, setExperience, stamina, setStamina, p
           }
     
         const pokem = {info: pokemon.species, pokemon: pokemon.id}
-           await Axios.post('http://localhost:3001/pokemon/catchPokemon', pokem , config)
+           await Axios.post('/pokemon/catchPokemon', pokem , config)
            setMyPokemons(myPokemons.concat(pokem))
         }
 

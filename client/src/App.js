@@ -78,7 +78,7 @@ const App = () => {
     const handleLogin = async (e) => {
       try{
         e.preventDefault()
-        const user = await Axios.post('http://localhost:3001/login', {username, password})
+        const user = await Axios.post('/login', {username, password})
         setUser(user)
         window.localStorage.setItem('pokeuser', user.data.token)
         setUsername('')
