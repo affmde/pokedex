@@ -124,7 +124,7 @@ const App = () => {
         <Routes>
           <Route path="*" element={<HomeComponent pokeballs={pokeballs} user={user} fav={favPokemons} myPokemons={myPokemons} />}></Route>
           {user && (<Route path="/pokemons" element={<PokemonsComponent user={user} setFav={setFavPokemons} fav={favPokemons} detail={detail} description={description} />}/>)}
-          {!user &&(<Route path="newUser" element={<CreateUserComponent />}/>)}
+          {!user &&(<Route path="newUser" element={<CreateUserComponent setMessage={setMessage} />}/>)}
           {user && (<Route path="/myPokemons" element={<MyPokemons setFav={(setFavPokemons)}  fav={favPokemons} detail={detail} description={description} user={user} />}></Route>)}
           {user && (<Route path="/wild" element={<WildComponent experience={experience} setExperience={setExperience} stamina={stamina} setStamina={setStamina} pokeballs={pokeballs} setPokeballs={setPokeballs} setMessage={setMessage} setMyPokemons={setMyPokemons} myPokemons={myPokemons} user={user} pokemons={detail}/>}></Route>)}
           {user && (<Route path="/pokemons/:id" element={<PokemonInfoComponent />} ></Route>)}
