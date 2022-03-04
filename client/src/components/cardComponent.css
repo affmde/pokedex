@@ -4,7 +4,7 @@
 }
 
 .card{
-    background-image: url('C:/Users/affmd/OneDrive/Área de Trabalho/VS Code projects/pokedex/client/src/media/images/sharon-mccutcheon-Ur_NzyKfCo4-unsplash.jpg');
+    background-image: url('https://images.unsplash.com/photo-1581257107100-f952b3a5c451?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
