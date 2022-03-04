@@ -19,16 +19,7 @@ export const WildComponent = ({experience, setExperience, stamina, setStamina, p
             setPokemon(null)
         }
 
-        /*if(experience >=10000){
-            const reset = experience-10000
-            setExperience(reset)
-            getLevel()
-            const send = reset-10000
-            getExperience(send)
-        }*/
-
         const lvl = Math.floor(experience/10000)+1
-        console.log('lvl' , lvl)
         setLevel(lvl)
 
     
@@ -225,7 +216,6 @@ export const WildComponent = ({experience, setExperience, stamina, setStamina, p
     }
 
     const now= Math.floor(((experience - ((level-1)*10000))/ (10000))*100)
-    console.log(now)
     return(
         <div id="wild-container">
         <Container>

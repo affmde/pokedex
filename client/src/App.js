@@ -64,7 +64,7 @@ const App = () => {
           fetch(`https://pokeapi.co/api/v2/pokemon-species/${pokemon.name}`)
           .then(response=> response.json())
           .then(function(pokemonData){
-            description.push(pokemonData.flavor_text_entries[0].flavor_text)
+            description.push({id: pokemonData.id, description: pokemonData.flavor_text_entries[0].flavor_text})
           })
         }
 

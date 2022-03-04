@@ -18,7 +18,6 @@ export const CardComponent = ({info, user, fav, setFav, desc}) => {
     },[favorite])
 
 
-
     const addFavorite = async () => {
     
     const token = user.data.token
@@ -52,7 +51,7 @@ export const CardComponent = ({info, user, fav, setFav, desc}) => {
             <Card.Body >
                 <Card.Title>{info.species.name}</Card.Title>
                 <Card.Text>
-                    {desc[info.id-1]}
+                    {desc[info.id-1].description}
                 </Card.Text>
             </Card.Body >
             <div className="card-body">
