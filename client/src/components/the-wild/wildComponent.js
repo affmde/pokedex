@@ -3,7 +3,7 @@ import { useState, useEffect } from "react"
 import Axios from 'axios'
 import './wildComponent.css'
 import pokeball from '../../media/images/pokeball.png'
-
+import {Helmet} from 'react-helmet'
 
 export const WildComponent = ({experience, setExperience, stamina, setStamina, pokeballs, setPokeballs, setMessage, setMyPokemons, myPokemons, user, pokemons}) => {
     const [pokemon, setPokemon] = useState(null)
@@ -218,6 +218,11 @@ export const WildComponent = ({experience, setExperience, stamina, setStamina, p
     const now= Math.floor(((experience - ((level-1)*10000))/ (10000))*100)
     return(
         <div id="wild-container">
+        <Helmet>
+            <title>PokeThat - The wild</title>
+            <meta name="description" content="Try to find and catch all the first 151 pokemons" />
+        </Helmet>
+
         <Container>
             <Row>
                 <Col>Stats</Col>

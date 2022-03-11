@@ -3,6 +3,7 @@ import {useParams} from 'react-router-dom'
 import Axios from 'axios'
 import {Spinner, Container, Row, Col, Image} from 'react-bootstrap'
 import './pokemonInfoComponent.css'
+import {Helmet} from 'react-helmet'
 
 export const PokemonInfoComponent = () => {
     const id = useParams()
@@ -21,6 +22,11 @@ export const PokemonInfoComponent = () => {
 
     if(!pokemon)return <Spinner animation="border" />
     return (
+        <div>
+            <Helmet>
+                <title>PokeThat - Description</title>
+                <meta name="description" content="Check individual pokemon description" />
+            </Helmet>
         <Container fluid id="poke-info-container">
             <Row className="poke-detail-row">
                 <Col><h2>{pokemon.name}</h2></Col>
@@ -52,5 +58,6 @@ export const PokemonInfoComponent = () => {
             </Row>
             
         </Container>
+        </div>
     )
 }

@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import {Form, Button} from 'react-bootstrap'
 import Axios from 'axios'
 import { useNavigate } from 'react-router-dom'
-
+import {Helmet} from 'react-helmet'
 
 export const CreateUserComponent = ({setMessage}) => {
     const [name, setName] = useState('')
@@ -34,6 +34,12 @@ const handleSubmit = async (e) => {
     }
 }
     return(
+        <div>
+        <Helmet>
+            <title>PokeThat - Sign up</title>
+            <meta name="description" content="Create your account and register in the PokeThat" />
+        </Helmet>
+
         <Form onSubmit={handleSubmit}>
             <Form.Group className="mb-3">
                 <Form.Label>Name</Form.Label>
@@ -49,5 +55,6 @@ const handleSubmit = async (e) => {
                 Create User
             </Button>
         </Form>
+        </div>
     )
 }

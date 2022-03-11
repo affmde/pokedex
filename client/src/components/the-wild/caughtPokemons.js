@@ -1,4 +1,5 @@
 import { Card, Col, Container, Row } from "react-bootstrap"
+import {Helmet} from 'react-helmet'
 
 export const CaughtPokemons = ({myPokemons, detail}) => {
 
@@ -17,6 +18,11 @@ export const CaughtPokemons = ({myPokemons, detail}) => {
     })
 
     return(
+        <div>
+        <Helmet>
+            <title>PokeThat - Caught Pokemons</title>
+            <meta name="description" content="Check here all pokemons you've already get" />
+        </Helmet>
         <Container>
             <Row>
                 <Col>Total: {arr.length}</Col>
@@ -35,5 +41,6 @@ export const CaughtPokemons = ({myPokemons, detail}) => {
                 ))}
             </Row>
         </Container>
+        </div>
     )
 }

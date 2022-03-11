@@ -1,7 +1,7 @@
 import React from 'react'
 import {Card, Button, CardGroup } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-
+import {Helmet} from 'react-helmet'
 
 export const MyPokemons = ({detail, description, user, fav, setFav}) => {
     
@@ -27,6 +27,10 @@ export const MyPokemons = ({detail, description, user, fav, setFav}) => {
     
     return(
         <div>
+            <Helmet>
+                <title>PokeThat - Favorite Pokemons</title>
+                <meta name="description" content="Check here all your favorite pokemons, and get access to the description of each one" />
+            </Helmet>
         <CardGroup>
         {arr.map((pokemon, index)=>( 
             <Card style={{ minWidth: '18rem', maxWidth: '18rem', margin: '10px 10px' }} key={pokemon.pokemon}>
