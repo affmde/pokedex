@@ -219,7 +219,7 @@ export const WildComponent = ({experience, setExperience, stamina, setStamina, p
     return(
         <div id="wild-container">
         <Helmet>
-            <title>PokeThat - The wild</title>
+            <title>The wild</title>
             <meta name="description" content="Try to find and catch all the first 151 pokemons" />
         </Helmet>
 

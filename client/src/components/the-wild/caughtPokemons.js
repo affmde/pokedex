@@ -20,7 +20,7 @@ export const CaughtPokemons = ({myPokemons, detail}) => {
     return(
         <div>
         <Helmet>
-            <title>PokeThat - Caught Pokemons</title>
+            <title>Caught Pokemons</title>
             <meta name="description" content="Check here all pokemons you've already get" />
         </Helmet>
         <Container>

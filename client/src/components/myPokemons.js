@@ -28,7 +28,7 @@ export const MyPokemons = ({detail, description, user, fav, setFav}) => {
     return(
         <div>
             <Helmet>
-                <title>PokeThat - Favorite Pokemons</title>
+                <title>Favorite Pokemons</title>
                 <meta name="description" content="Check here all your favorite pokemons, and get access to the description of each one" />
             </Helmet>
         <CardGroup>

@@ -17,7 +17,7 @@ export const PokemonsComponent = ({user, fav, setFav, detail, description}) => {
     return (
         <div>
             <Helmet>
-                <title>PokeThat - Pokemon List</title>
+                <title>Pokemon List</title>
                 <meta name="description" content="Check here all pokemons from first generation" />
             </Helmet>
             <input type="text" placeholder="filter by name" onChange={e=>setFilter(e.target.value)}></input>

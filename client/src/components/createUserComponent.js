@@ -36,7 +36,7 @@ const handleSubmit = async (e) => {
     return(
         <div>
         <Helmet>
-            <title>PokeThat - Sign up</title>
+            <title>Sign up</title>
             <meta name="description" content="Create your account and register in the PokeThat" />
         </Helmet>
 

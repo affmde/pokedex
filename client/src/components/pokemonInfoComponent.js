@@ -24,7 +24,7 @@ export const PokemonInfoComponent = () => {
     return (
         <div>
             <Helmet>
-                <title>PokeThat - Description</title>
+                <title>Description</title>
                 <meta name="description" content="Check individual pokemon description" />
             </Helmet>
         <Container fluid id="poke-info-container">
